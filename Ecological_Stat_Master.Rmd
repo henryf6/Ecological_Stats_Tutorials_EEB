@@ -31,8 +31,16 @@ library(maps)
 ```{r za maps}
 za <-  map("world", "South Africa", fill  =TRUE, xlim = c(-15, 60), ylim = c(-40,40), mar= c(0,0,0,0))
 za.sp <- map2SpatialPolygons(za)
-par(mar=c(0,0,0,0))
+par(mfrow = c(1,2), mar=c(0,0,0,0))
 plot(za.sp, asp=1, col = 'red')
+
+
+coord <- maps:::map.poly("world", "South Africa", exact=FALSE,
+xlim=c(-15,60),ylim=c(-40,40),
+boundary=FALSE,
+interior=TRUE, fill=TRUE, as.polygon=TRUE)
+coord.sp <- map2SpatialPolygons(coord)
+plot(coord.sp, col="cadetblue")
 
 ```
 
