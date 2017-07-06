@@ -6,8 +6,13 @@ output: html_notebook
 ```{r master setup}
 if(Sys.info()['user']=='henryfrye') setwd("/Users/henryfrye/Dropbox/Intellectual_Endeavours/Literature/ecological_stats/Ecological_Stats_Tutorials_EEB")
 
+<<<<<<< HEAD
 if(Sys.info()['user']=='rebeccacolby') setwd("/Users/rebeccacolby/Desktop/R_tutorials&practice/Ecological_Stats_Tutorials_EEB/")
 
+=======
+
+source("sp_convert_function.R")
+>>>>>>> abdbf46d627aa54a831a81ecdde7d2f4f60d61fa
 ```
 
 
@@ -23,6 +28,15 @@ library(rgdal)
 library(mapdata)
 library(maps)
 
+
+```
+
+
+```{r za maps}
+za <-  map("world", "South Africa", fill  =TRUE, xlim = c(-15, 60), ylim = c(-40,40), mar= c(0,0,0,0))
+za.sp <- map2SpatialPolygons(za)
+par(mar=c(0,0,0,0))
+plot(aus.sp, asp=1)
 
 ```
 
