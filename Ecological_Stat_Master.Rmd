@@ -31,7 +31,7 @@ library(maps)
 za <-  map("world", "South Africa", fill  =TRUE, xlim = c(-15, 60), ylim = c(-40,40), mar= c(0,0,0,0))
 za.sp <- map2SpatialPolygons(za)
 par(mar=c(0,0,0,0))
-plot(aus.sp, asp=1)
+plot(za.sp, asp=1, col = 'red')
 
 ```
 
