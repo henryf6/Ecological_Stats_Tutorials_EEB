@@ -3,4 +3,26 @@ title: "Ecological Stats"
 output: html_notebook
 ---
 
-#DOPE
+```{r master setup}
+if(Sys.info()['user']=='henryfrye') setwd("/Users/henryfrye/Dropbox/Intellectual_Endeavours/Literature/ecological_stats/Ecological_Stats_Tutorials_EEB")
+
+
+
+```
+
+
+
+
+#Maps in R
+
+```{r mapping setup}
+
+library(sp)
+library(rgeos)
+library(rgdal)
+library(mapdata)
+library(maps)
+
+
+```
+
