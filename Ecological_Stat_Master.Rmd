@@ -6,7 +6,7 @@ output: html_notebook
 ```{r master setup}
 if(Sys.info()['user']=='henryfrye') setwd("/Users/henryfrye/Dropbox/Intellectual_Endeavours/Literature/ecological_stats/Ecological_Stats_Tutorials_EEB")
 
-
+if(Sys.info()['user']=='rebeccacolby') setwd("/Users/rebeccacolby/Desktop/R_tutorials&practice/Ecological_Stats_Tutorials_EEB/")
 
 ```
 
